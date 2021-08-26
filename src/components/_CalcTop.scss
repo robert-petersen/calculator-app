@@ -1,9 +1,15 @@
 .calculator-top {
-  color: white;
+  color: $primary-text-white;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
   align-items: end;
+}
+.calculator-top.theme2 {
+  color: $theme2-text-dark;
+}
+.calculator-top.theme3 {
+  color: $theme3-text-yellow;
 }
 
 .top-title {
@@ -35,21 +41,35 @@
 .theme-button-selecter {
   border: 1px solid transparent;
   border-radius: 10px;
-  background-color: hsl(223, 31%, 20%);
+  background-color: $primary-secondary-background;
   width: 60px;
   height: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+.theme-button-selecter.theme2 {
+  background-color: $theme2-secondary-background;
+}
+.theme-button-selecter.theme3 {
+  background-color: $theme3-secondary-background;
+}
 
 .button-select {
   width: 20px;
   height: 15px;
-  background-color: red;
-  border: 1px solid red;
+  background-color: $primary-equal-button;
+  border: 1px solid $primary-equal-button;
   border-radius: 50px;
   display: none;
+}
+.button-select.theme2 {
+  background-color: $theme2-equal-button;
+  border: 1px solid $theme2-equal-button;
+}
+.button-select.theme3 {
+  background-color: $theme3-equal-button;
+  border: 1px solid $theme3-equal-button;
 }
 
 .switch-active {

@@ -1,7 +1,7 @@
 .calculator-screen {
   border: 1px solid transparent;
   border-radius: 10px;
-  background-color: hsl(224, 36%, 15%);
+  background-color: $primary-screen;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -9,6 +9,18 @@
   h1 {
     font-size: 2rem;
     margin-right: 10px;
-    color: white;
+    color: $primary-text-white;
   }
+  h1.theme2 {
+    color: $theme2-text-dark;
+  }
+  h1.theme3 {
+    color: $theme3-text-yellow;
+  }
+}
+.calculator-screen.theme2 {
+  background-color: $theme2-screen;
+}
+.calculator-screen.theme3 {
+  background-color: $theme3-screen;
 }

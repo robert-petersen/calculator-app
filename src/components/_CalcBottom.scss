@@ -1,8 +1,8 @@
 .calculator-bottom {
   border: 1px solid transparent;
   border-radius: 10px;
-  background-color: hsl(223, 31%, 20%);
-  color: hsl(221, 14%, 31%);
+  background-color: $primary-secondary-background;
+  color: $primary-text-blue;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -16,39 +16,74 @@
   grid-gap: 20px;
   padding: 20px;
 }
+.calculator-bottom.theme2 {
+  background-color: $theme2-secondary-background;
+  color: $theme2-text-white;
+}
+.calculator-bottom.theme3 {
+  background-color: $theme3-secondary-background;
+  color: $theme3-text-yellow;
+}
 
 .regular {
   cursor: pointer;
-  background-color: hsl(30, 25%, 89%);
-  box-shadow: 2px 2px 2px hsl(28, 16%, 65%);
+  background-color: $primary-regular-button;
+  box-shadow: 2px 2px 2px $primary-regular-button-shadow;
   border: 1px solid transparent;
   border-radius: 10px;
   text-align: center;
   padding-top: 20px;
+}
+.regular.theme2 {
+  background-color: $theme2-regular-button;
+  box-shadow: 2px 2px 2px $theme2-regular-button-shadow;
+}
+.regular.theme3 {
+  background-color: $theme3-regular-button;
+  box-shadow: 2px 2px 2px $theme3-regular-button-shadow;
 }
 
 .secondary {
   cursor: pointer;
-  background-color: hsl(225, 21%, 49%);
-  box-shadow: 2px 2px 2px hsl(224, 28%, 35%);
+  background-color: $primary-secondary-button;
+  box-shadow: 2px 2px 2px $primary-secondary-button-shadow;
   border: 1px solid transparent;
   border-radius: 10px;
   text-align: center;
   padding-top: 20px;
-  color: white;
-
+  color: $primary-text-white;
+}
+.secondary.theme2 {
+  background-color: $theme2-secondary-button;
+  box-shadow: 2px 2px 2px $theme2-secondary-button-shadow;
+  color: $primary-text-white;
+}
+.secondary.theme3 {
+  background-color: $theme3-secondary-button;
+  box-shadow: 2px 2px 2px $theme3-secondary-button-shadow;
+  color: $primary-text-white;
 }
 
 .equal {
   cursor: pointer;
-  background-color: hsl(6, 63%, 50%);
-  box-shadow: 2px 2px 2px hsl(6, 70%, 34%);
+  background-color: $primary-equal-button;
+  box-shadow: 2px 2px 2px $primary-equal-button-shadow;
   border: 1px solid transparent;
   border-radius: 10px;
   text-align: center;
   padding-top: 20px;
-  color: white;
+  color: $primary-text-white;
   grid-area: EQUAL;
+}
+.equal.theme2 {
+  background-color: $theme2-equal-button;
+  box-shadow: 2px 2px 2px $theme2-equal-button-shadow;
+  color: $theme2-text-white;
+}
+.equal.theme3 {
+  background-color: $theme3-equal-button;
+  box-shadow: 2px 2px 2px $theme3-equal-button-shadow;
+  color: $theme3-text-blue;
 }
 
 .reset {
