@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-// Font Import / Overall Styles
+// *** Font Import / Overall Styles ***
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 
 * {
@@ -59,11 +59,50 @@ body {
   font-family: 'Spartan', sans-serif;
 }
 
-// Variables
+// *** Variables ***
+// Backgrounds
+$pirmary-background: hsl(222, 26%, 31%);
+$theme2-background: hsl(0, 0%, 90%);
+$theme3-background: hsl(268, 75%, 9%);
+// Screen Colors
+$primary-screen: hsl(224, 36%, 15%);
+$theme2-screen: hsl(0, 0%, 93%);
+$theme3-screen:hsl(268, 71%, 12%);
+// Secondary Backgrounds
+$primary-secondary-background: hsl(223, 31%, 20%);
+$theme2-secondary-background: hsl(0, 5%, 81%);
+$theme3-secondary-background: hsl(268, 71%, 12%);
+// Primary Theme Buttons & Shadows
+$primary-regular-button: hsl(30, 25%, 89%);
+$primary-regular-button-shadow: hsl(28, 16%, 65%);
+$primary-secondary-button: hsl(225, 21%, 49%);
+$primary-secondary-button-shadow: hsl(224, 28%, 35%);
+$primary-equal-button: hsl(6, 63%, 50%);
+$primary-equal-button-shadow: hsl(6, 70%, 34%);
+// Theme 2 Buttons & Shadows
+$theme2-regular-button: hsl(45, 7%, 89%);
+$theme2-regular-button-shadow: hsl(35, 11%, 61%);
+$theme2-secondary-button: hsl(185, 42%, 37%);
+$theme2-secondary-button-shadow: hsl(185, 58%, 25%);
+$theme2-equal-button: hsl(25, 98%, 40%);
+$theme2-equal-button-shadow: hsl(25, 99%, 27%);
+// Theme 3 Buttons & Shadows
+$theme3-regular-button: hsl(268, 47%, 21%);
+$theme3-regular-button-shadow: hsl(290, 70%, 36%);
+$theme3-secondary-button: hsl(281, 89%, 26%);
+$theme3-secondary-button-shadow: hsl(285, 91%, 52%);
+$theme3-equal-button: hsl(176, 100%, 44%);
+$theme3-equal-button-shadow: hsl(177, 92%, 70%);
+// Text Colors
+$primary-text-white: hsl(0, 0, 100%);
+$primary-text-blue: hsl(221, 14%, 31%);
+$theme2-text-dark: hsl(60, 10%, 19%);
+$theme2-text-white: hsl(0, 0, 100%);
+$theme3-text-yellow: hsl(52, 100%, 62%);
+$theme3-text-blue: hsl(198, 20%, 13%);
+$theme3-text-white: hsl(0, 0, 100%);
 
-// Mixins
-
-// Component Sheet Imports
+// *** Component Sheet Imports ***
 @import "./app";
 @import "./components//CalcTop";
 @import "./components//CalcScreen";

@@ -108,6 +108,14 @@ body {
           align-items: end;
 }
 
+.calculator-top.theme2 {
+  color: #35352c;
+}
+
+.calculator-top.theme3 {
+  color: #ffe53d;
+}
+
 .top-title {
   font-size: 1.8rem;
   -webkit-box-pack: start;
@@ -170,13 +178,31 @@ body {
           align-items: center;
 }
 
+.theme-button-selecter.theme2 {
+  background-color: #d1cccc;
+}
+
+.theme-button-selecter.theme3 {
+  background-color: #1d0934;
+}
+
 .button-select {
   width: 20px;
   height: 15px;
-  background-color: red;
-  border: 1px solid red;
+  background-color: #d03f2f;
+  border: 1px solid #d03f2f;
   border-radius: 50px;
   display: none;
+}
+
+.button-select.theme2 {
+  background-color: #ca5502;
+  border: 1px solid #ca5502;
+}
+
+.button-select.theme3 {
+  background-color: #00e0d1;
+  border: 1px solid #00e0d1;
 }
 
 .switch-active {
@@ -204,6 +230,22 @@ body {
   color: white;
 }
 
+.calculator-screen h1.theme2 {
+  color: #35352c;
+}
+
+.calculator-screen h1.theme3 {
+  color: #ffe53d;
+}
+
+.calculator-screen.theme2 {
+  background-color: #ededed;
+}
+
+.calculator-screen.theme3 {
+  background-color: #1d0934;
+}
+
 .calculator-bottom {
   border: 1px solid transparent;
   border-radius: 10px;
@@ -220,6 +262,16 @@ body {
   padding: 20px;
 }
 
+.calculator-bottom.theme2 {
+  background-color: #d1cccc;
+  color: white;
+}
+
+.calculator-bottom.theme3 {
+  background-color: #1d0934;
+  color: #ffe53d;
+}
+
 .regular {
   cursor: pointer;
   background-color: #eae3dc;
@@ -231,6 +283,18 @@ body {
   padding-top: 20px;
 }
 
+.regular.theme2 {
+  background-color: #e5e4e1;
+  -webkit-box-shadow: 2px 2px 2px #a69d91;
+          box-shadow: 2px 2px 2px #a69d91;
+}
+
+.regular.theme3 {
+  background-color: #341c4f;
+  -webkit-box-shadow: 2px 2px 2px #871c9c;
+          box-shadow: 2px 2px 2px #871c9c;
+}
+
 .secondary {
   cursor: pointer;
   background-color: #637097;
@@ -240,6 +304,20 @@ body {
   border-radius: 10px;
   text-align: center;
   padding-top: 20px;
+  color: white;
+}
+
+.secondary.theme2 {
+  background-color: #377f86;
+  -webkit-box-shadow: 2px 2px 2px #1b5f65;
+          box-shadow: 2px 2px 2px #1b5f65;
+  color: white;
+}
+
+.secondary.theme3 {
+  background-color: #58077d;
+  -webkit-box-shadow: 2px 2px 2px #bc15f4;
+          box-shadow: 2px 2px 2px #bc15f4;
   color: white;
 }
 
@@ -257,6 +335,20 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: EQUAL;
+}
+
+.equal.theme2 {
+  background-color: #ca5502;
+  -webkit-box-shadow: 2px 2px 2px #893901;
+          box-shadow: 2px 2px 2px #893901;
+  color: white;
+}
+
+.equal.theme3 {
+  background-color: #00e0d1;
+  -webkit-box-shadow: 2px 2px 2px #6cf9f2;
+          box-shadow: 2px 2px 2px #6cf9f2;
+  color: #1b2428;
 }
 
 .reset {
