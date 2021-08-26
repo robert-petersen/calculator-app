@@ -5,22 +5,21 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   h1 {
     font-size: 2rem;
     margin-right: 10px;
     color: $primary-text-white;
   }
-  h1.theme2 {
-    color: $theme2-text-dark;
-  }
-  h1.theme3 {
-    color: $theme3-text-yellow;
-  }
 }
 .calculator-screen.theme2 {
   background-color: $theme2-screen;
+  h1 {
+    color: $theme2-text-dark;
+  }
 }
 .calculator-screen.theme3 {
   background-color: $theme3-screen;
+  h1 {
+    color: $theme3-text-yellow;
+  }
 }
