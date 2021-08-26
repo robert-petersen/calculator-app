@@ -12,7 +12,7 @@ const CalcTop = () => {
             <h3 className="theme-number">2</h3>
             <h3 className="theme-number">3</h3>
           </div>
-          <div className="theme-button">
+          <div className="theme-button-selecter">
             <div className="button-select"></div>
             <div className="button-select"></div>
             <div className="button-select"></div>

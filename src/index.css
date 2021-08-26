@@ -84,15 +84,14 @@ body {
 }
 
 .calculator {
-  width: 50vw;
-  height: 70vh;
-  background-color: grey;
+  width: 400px;
+  height: 600px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 1fr 1fr 3fr;
-      grid-template-rows: 1fr 1fr 3fr;
+  -ms-grid-rows: 1fr 1fr 4fr;
+      grid-template-rows: 1fr 1fr 4fr;
   grid-gap: 1rem;
 }
 
@@ -105,5 +104,103 @@ body {
 .attribution a {
   color: #3e52a3;
   font-size: 11px;
+}
+
+.calculator-top {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.top-title {
+  font-size: 1.8rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.top-themes-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.theme-select-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.theme-number-container {
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.theme-button-selecter {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #232c43;
+  width: 60px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-select {
+  width: 20px;
+  height: 15px;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 50px;
+  display: none;
+}
+
+.switch-active {
+  display: block;
+}
+
+.calculator-screen {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.calculator-bottom {
+  border: 1px solid black;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=index.css.map */

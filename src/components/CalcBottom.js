@@ -2,7 +2,7 @@ import React from 'react';
 
 const CalcBottom = () => {
   return (
-    <div className="calculator__bottom">
+    <div className="calculator-bottom">
 
     </div>
   )
