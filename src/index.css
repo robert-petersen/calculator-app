@@ -99,10 +99,11 @@ body {
   font-size: 11px;
   text-align: center;
   margin-top: 10px;
+  color: grey;
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: black;
   font-size: 11px;
 }
 
@@ -195,8 +196,24 @@ body {
 }
 
 .calculator-screen {
-  border: 1px solid black;
+  border: 1px solid transparent;
   border-radius: 10px;
+  background-color: #182034;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator-screen h1 {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: white;
 }
 
 .calculator-bottom {
