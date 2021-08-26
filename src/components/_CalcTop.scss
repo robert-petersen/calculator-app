@@ -56,12 +56,15 @@
 }
 
 .button-select {
-  width: 20px;
+  width: 17px;
   height: 15px;
   background-color: $primary-equal-button;
   border: 1px solid $primary-equal-button;
   border-radius: 50px;
-  display: none;
+  opacity: 0%;
+}
+.button-select.selected {
+  opacity: 100%;
 }
 .button-select.theme2 {
   background-color: $theme2-equal-button;
