@@ -13,10 +13,6 @@
   height: 600px;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr 4fr;
+  grid-template-rows: .5fr 1fr 4fr;
   grid-gap: 1rem;
 }
-
-// Attribution Styles
-.attribution { font-size: 11px; text-align: center; margin-top: 10px; color: grey}
-.attribution a { color: black; font-size: 11px; }
