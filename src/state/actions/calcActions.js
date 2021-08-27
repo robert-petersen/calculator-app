@@ -1,3 +1,36 @@
+export const updateInput1Action = (change) => {
+  return (dispatch) => {
+    dispatch({
+      type: "updateInput1",
+      payload: change,
+    })
+  }
+}
+export const updateInput2Action = (change) => {
+  return (dispatch) => {
+    dispatch({
+      type: "updateInput2",
+      payload: change,
+    })
+  }
+}
+export const updateCalcTypeAction = (newClacType) => {
+  return (dispatch) => {
+    dispatch({
+      type: "updateCalcType",
+      payload: newClacType,
+    })
+  }
+}
+export const toggleInputAction = () => {
+  return (dispatch) => {
+    dispatch({
+      type: "updateToggleInput",
+      payload: "toggle :)",
+    })
+  }
+}
+
 export const addAction = (input1, input2) => {
   return (dispatch) => {
     dispatch({

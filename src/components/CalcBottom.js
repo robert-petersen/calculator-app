@@ -1,47 +1,49 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../state/actions/index";
 
 const CalcBottom = ({ theme2, theme3 }) => {
 // const CalcBottom = () => {
-  const [ input1, setInput1 ] = useState("");
-  const [ input2, setInput2 ] = useState("");
-  const [ calcType, setCalcType ] = useState("");
-  const [ toggleInput, setToggleinput ] = useState(1);
+  // const [ input1, setInput1 ] = useState("");
+  // const [ input2, setInput2 ] = useState("");
+  // const [ calcType, setCalcType ] = useState("");
+  // const [ toggleInput, setToggleinput ] = useState(1);
 
-  const calc = useSelector((state) => state.calc);
+
   // const { theme2, theme3 } = useSelector((state) => state.theme);
+  const { input1, input2, calcType, toggleInput } = useSelector((state) => state.calc);
   const dispatch = useDispatch();
-  const { addAction, subtractAction, divideAction, multiplyAction, resetAction } = bindActionCreators(actionCreators, dispatch);
+  const { updateInput1Action, updateInput2Action, updateCalcTypeAction, toggleInputAction, addAction, subtractAction, divideAction, multiplyAction, resetAction } = bindActionCreators(actionCreators, dispatch);
 
   const addToInput = (toggleInput, value) => {
-    if (toggleInput === 1) {
-      setInput1(input1 + value);
+    if ( toggleInput ) {
+      updateInput1Action(value);
     } else {
-      setInput2(input2 + value);
+      updateInput2Action(value);
     }
   }
 
   const settingCalcType = (toggleInput, value) => {
-    if (toggleInput === 1) {
-      setCalcType(value);
-      setToggleinput(2)
+    if ( toggleInput ) {
+      updateCalcTypeAction(value);
+      toggleInputAction();
     }
   }
 
   const del = (toggleInput) => {
-    if (toggleInput === 1) {
-      setInput1(input1.substring(0, input1.length - 1));
+    if ( toggleInput ) {
+      updateInput1Action("delete");
     } else {
-      setInput2(input2.substring(0, input2.length - 1));
+      updateInput2Action("delete");
     }
   }
 
   const solve = (toggleInput, input1, input2, calcType) => {
-    if (toggleInput === 2) {
+    if (toggleInput === false) {
       let one = parseFloat(input1);
       let two = parseFloat(input2);
+      console.log("RESET:", "one", one, "two", two, "input1", input1, "input2", input2);
       if (calcType === "+") {
         addAction(one, two);
       } else if (calcType === "-") {
@@ -51,19 +53,11 @@ const CalcBottom = ({ theme2, theme3 }) => {
       } else if (calcType === "x") {
         multiplyAction(one, two);
       }
-      setInput1(calc.toString()); // change to the string of state
-      setInput2("");
-      setCalcType("");
-      setToggleinput(1);
     }
   }
 
   const reset = () => {
     resetAction();
-    setInput1("");
-    setInput2("");
-    setCalcType("");
-    setToggleinput(1);
   }
 
   return (
