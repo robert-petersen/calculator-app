@@ -14,11 +14,15 @@ const themeReducer = (state = initialState, action) => {
         state.themeNumber = 3;
         state.theme2 = false;
         state.theme3 = true;
-      } else {
-        state.payload = 2;
+      } else if (action.payload === 1) {
+        state.themeNumber = 2;
         state.theme2 = true;
       }
-      return state
+      return ({
+        themeNumber: state.themeNumber,
+        theme2: state.theme2,
+        theme3: state.theme3,
+      })
     default:
       return state;
   }

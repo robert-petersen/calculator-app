@@ -1,4 +1,4 @@
-export const changeTheme = (themeNumber) => {
+export const changeThemeAction = (themeNumber) => {
   return (dispatch) => {
     dispatch({
       type: "changeTheme",

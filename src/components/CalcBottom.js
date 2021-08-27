@@ -3,9 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../state/actions/index";
 
-const CalcBottom = ({ theme2, theme3 }) => {
-// const CalcBottom = () => {
-  // const { theme2, theme3 } = useSelector((state) => state.theme);
+const CalcBottom = () => {
+  const { theme2, theme3 } = useSelector((state) => state.theme);
   const { input1, input2, calcType, toggleInput } = useSelector((state) => state.calc);
   const dispatch = useDispatch();
   const { updateInput1Action, updateInput2Action, updateCalcTypeAction, toggleInputAction, addAction, subtractAction, divideAction, multiplyAction, resetAction } = bindActionCreators(actionCreators, dispatch);
