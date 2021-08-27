@@ -8,10 +8,6 @@ function App() {
   const [ theme2, setTheme2 ] = useState(false);
   const [ theme3, setTheme3 ] = useState(false);
 
-  // const [ input1, setInput1 ] = useState("");
-  // const [ input2, setInput2 ] = useState("");
-  // const [ calcType, setCalcType ] = useState("");
-
   return (
     <div className={`
       app
