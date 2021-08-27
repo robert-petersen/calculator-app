@@ -39,9 +39,7 @@ const calcReducer = (state = initialState, action) => {
       });
     case "add":
       let addResults = action.payload.input1 + action.payload.input2;
-      console.log("addresults: ", addResults);
       state.input1 = addResults.toString();
-      console.log("state.input1: ", state.input1);
       return ({
         input1: state.input1,
         input2: "",

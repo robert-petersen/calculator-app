@@ -1,8 +1,9 @@
 import React from 'react';
 import { useSelector } from "react-redux";
 
-const CalcScreen = ({ theme2, theme3 }) => {
+const CalcScreen = () => {
   const { input1, input2, calcType } = useSelector((state) => state.calc);
+  const { theme2, theme3 } = useSelector((state) => state.theme);
 
   return (
     <div className={`

@@ -3,15 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../state/actions/index";
 
-const CalcBottom = ({ theme2, theme3 }) => {
-// const CalcBottom = () => {
-  // const [ input1, setInput1 ] = useState("");
-  // const [ input2, setInput2 ] = useState("");
-  // const [ calcType, setCalcType ] = useState("");
-  // const [ toggleInput, setToggleinput ] = useState(1);
-
-
-  // const { theme2, theme3 } = useSelector((state) => state.theme);
+const CalcBottom = () => {
+  const { theme2, theme3 } = useSelector((state) => state.theme);
   const { input1, input2, calcType, toggleInput } = useSelector((state) => state.calc);
   const dispatch = useDispatch();
   const { updateInput1Action, updateInput2Action, updateCalcTypeAction, toggleInputAction, addAction, subtractAction, divideAction, multiplyAction, resetAction } = bindActionCreators(actionCreators, dispatch);
@@ -43,7 +36,6 @@ const CalcBottom = ({ theme2, theme3 }) => {
     if (toggleInput === false) {
       let one = parseFloat(input1);
       let two = parseFloat(input2);
-      console.log("RESET:", "one", one, "two", two, "input1", input1, "input2", input2);
       if (calcType === "+") {
         addAction(one, two);
       } else if (calcType === "-") {

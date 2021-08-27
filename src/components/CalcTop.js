@@ -1,19 +1,15 @@
 import React from 'react';
+import { useSelector, useDispatch } from "react-redux";
+import { bindActionCreators } from "redux"; 
+import { themeActionCreators } from "../state/actions/index";
 
-const CalcTop = ({ theme2, theme3, themeNumber, setThemeNumber, setTheme2, setTheme3 }) => {
+const CalcTop = () => {
+  const { theme2, theme3, themeNumber } = useSelector((state) => state.theme);
+  const dispatch = useDispatch();
+  const { changeThemeAction } = bindActionCreators(themeActionCreators, dispatch);
 
   const themeToggle = (themeNumber) => {
-    if (themeNumber === 3) {
-      setThemeNumber(1);
-      setTheme3(false);
-    } else if (themeNumber === 2) {
-      setThemeNumber(3);
-      setTheme2(false);
-      setTheme3(true);
-    } else {
-      setThemeNumber(2);
-      setTheme2(true);
-    }
+    changeThemeAction(themeNumber);
   }
 
   return (
