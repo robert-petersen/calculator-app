@@ -29,26 +29,15 @@ const CalcTop = () => {
           </div>
           <div 
             className={`theme-button-selecter 
+              ${ themeNumber === 1 ? "selected1" : "" }
+              ${ themeNumber === 2 ? "selected2" : "" }
+              ${ themeNumber === 3 ? "selected3" : "" }
               ${ theme2 ? "theme2" : "" }
               ${ theme3 ? "theme3" : "" }
             `} onClick={() => {themeToggle(themeNumber)}}>
-          <div 
-              className={`button-select 
-                ${ themeNumber === 1 ? "selected" : "" } 
-                ${ theme2 ? "theme2" : "" }
-                ${ theme3 ? "theme3" : "" }
-              `}>
-            </div>
+
             <div 
               className={`button-select 
-                ${ themeNumber === 2 ? "selected" : "" } 
-                ${ theme2 ? "theme2" : "" }
-                ${ theme3 ? "theme3" : "" }
-              `}>
-            </div>
-            <div 
-              className={`button-select 
-                ${ themeNumber === 3 ? "selected" : "" } 
                 ${ theme2 ? "theme2" : "" }
                 ${ theme3 ? "theme3" : "" }
               `}>

@@ -160,13 +160,14 @@ body {
 }
 
 .theme-number-container {
-  width: 60px;
+  width: 50px;
+  margin-right: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .theme-button-selecter {
@@ -178,12 +179,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.theme-button-selecter.selected1 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.theme-button-selecter.selected2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.theme-button-selecter.selected3 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .theme-button-selecter.theme2 {
@@ -198,27 +214,16 @@ body {
   width: 17px;
   height: 15px;
   background-color: #d03f2f;
-  border: 1px solid #d03f2f;
+  border: 1px solid transparent;
   border-radius: 50px;
-  opacity: 0%;
-}
-
-.button-select.selected {
-  opacity: 100%;
 }
 
 .button-select.theme2 {
   background-color: #ca5502;
-  border: 1px solid #ca5502;
 }
 
 .button-select.theme3 {
   background-color: #00e0d1;
-  border: 1px solid #00e0d1;
-}
-
-.switch-active {
-  display: block;
 }
 
 .calculator-screen {
