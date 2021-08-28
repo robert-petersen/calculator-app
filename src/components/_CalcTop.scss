@@ -59,7 +59,7 @@
   width: 17px;
   height: 15px;
   background-color: $primary-equal-button;
-  border: 1px solid $primary-equal-button;
+  border: 1px solid transparent;
   border-radius: 50px;
   opacity: 0%;
 }
@@ -68,11 +68,9 @@
 }
 .button-select.theme2 {
   background-color: $theme2-equal-button;
-  border: 1px solid $theme2-equal-button;
 }
 .button-select.theme3 {
   background-color: $theme3-equal-button;
-  border: 1px solid $theme3-equal-button;
 }
 
 .switch-active {
