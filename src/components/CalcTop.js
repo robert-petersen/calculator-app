@@ -13,7 +13,7 @@ const CalcTop = () => {
   }
 
   return (
-    <div className={`
+    <div data-testid="calcTop" className={`
       calculator-top
       ${ theme2 ? "theme2" : "" }
       ${ theme3 ? "theme3" : "" }
